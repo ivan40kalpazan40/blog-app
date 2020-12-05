@@ -3,6 +3,8 @@ function loadPartials(context){
     const user = getUser();
     context.isLogged = Boolean(user);
     context.email = user? user.email:'Guest';
+    
+    
     return context.loadPartials({
         'header': '../views/header.hbs'
     });
