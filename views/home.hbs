@@ -1,5 +1,6 @@
   <!-- Home -->
   {{>header}}
+    {{#if isLogged}}
   <section id="home-logged">
     <section class="first-section">
       <section class="background-container">
@@ -22,6 +23,7 @@
       </div>
     </section>
   </section>
+  {{else}}
 
   <section id="home">
     <section class="background-container">
@@ -32,3 +34,5 @@
       </div>
     </section>
   </section>
+
+  {{/if}}
